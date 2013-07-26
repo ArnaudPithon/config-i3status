@@ -29,7 +29,7 @@ disk "/mnt/1000Go" {
 }
 
 run_watch DHCP {
-	pidfile = "/run/dhcpcd/resolv.conf/*"
+	pidfile = "/run/dhcpcd-*.pid"
 }
 
 wireless wlan0 {
