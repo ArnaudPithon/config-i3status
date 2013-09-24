@@ -1,4 +1,5 @@
 # ~/.config/i3status/config
+# $Id$
 # vim:set ft=sh:
 general {
 	output_format = none
