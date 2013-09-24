@@ -7,8 +7,7 @@ general {
 }
 
 order += "disk /home"
-order += "disk /mnt/500Go"
-order += "disk /mnt/1000Go"
+order += "disk /home/bildoon/video"
 order += "run_watch DHCP"
 order += "ipv6"
 order += "ethernet eth0"
