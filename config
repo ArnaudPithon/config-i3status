@@ -1,5 +1,5 @@
 # ~/.config/i3status/config
-# $Id: config,v 1.5 2014/03/06 22:27:51 bildoon Exp bildoon $
+# $Id: config,v 1.6 2014/04/13 18:35:36 bildoon Exp bildoon $
 # vim:set ft=sh:
 general {
 	output_format = none
@@ -8,7 +8,7 @@ general {
 }
 
 order += "disk /home"
-order += "disk /home/bildoon/video"
+order += "disk /usr/local"
 #order += "run_watch DHCP"
 #order += "ipv6"
 order += "ethernet eth0"
@@ -21,8 +21,8 @@ order += "time"
 disk "/home" {
 	format = "~/: %avail"
 }
-disk "/home/bildoon/video" {
-	format = "~/video: %avail"
+disk "/usr/local" {
+	format = "/u/local: %avail"
 }
 
 run_watch DHCP {
@@ -42,7 +42,7 @@ ethernet eth0 {
 
 cpu_temperature 0 {
 	format = "%degrees °C"
-	path = "/sys/devices/pci0000:00/0000:00:18.3/temp1_input"
+	path = "/sys/devices/virtual/thermal/thermal_zone1/temp"
 }
 
 cpu_usage {
